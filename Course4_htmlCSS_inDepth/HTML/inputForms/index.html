@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Little Lemon</title>
+    <meta name="description" content="A brief description">
+    <meta name="author" content="the site name">
+
+    <!-- Open Graph Protocol -->
+        <!-- MUST -->
+    <meta property="og:title" content="A brief description">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mysite.com"> 
+    <meta property="og:image" content="image.png"> 
+        <!-- OPTIONAL -->
+    <meta property="og:description" content="A brief description">
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site_name" content="en-US">
+
+
+    <!-- Icons -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Stylesheet links -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Website name and logo here-->
+        <img src="logo.png" alt="">
+    </header>
+    <nav>
+        <!-- Website navigation here -->
+    </nav>
+    <main>
+        <!-- Main content here -->
+        <h1>Sign Up</h1>
+        <form method="post">
+            <div>
+                <label for="user_name">First name</label><br>
+                <input id="user_name" name="user_name" type="text" minlength="2" required>
+            </div>
+            <div>
+                <label for="user_password">Password</label><br>
+                <input id="user_password" name="user_password" type="password" minlength="2" required>
+            </div>
+            <div>
+                <fieldset> 
+                    <legend>Personal Info</legend> 
+                    <label for="fname">First name:</label><br> 
+                    <input type="text" id="fname" name="fname" value="John"><br> 
+                    <label for="lname">Last name:</label><br> 
+                    <input type="text" id="lname" name="lname" value="Doe"><br> 
+                  </fieldset> 
+                  
+                  <fieldset> 
+                    <legend>Qualificaiton</legend> 
+                    <label for="pdegree">Primary degree:</label><br> 
+                    <input type="text" id="pdegree" name="degree" value="Masters"><br> 
+                    <label for="fos">Last name:</label><br> 
+                    <input type="text" id="fos" name="field" value="Psychology"><br> 
+                  </fieldset> 
+            </div>
+            <div>
+                <label for="flowers">Favourite flower:</label><br> 
+                <input list="flowers" name="flowers"> 
+                <datalist id="flowers"> 
+                  <option value="Rose"> 
+                  <option value="Lily"> 
+                  <option value="Tulip"> 
+                  <option value="Daffodil"> 
+                  <option value="Orchid"> 
+                </datalist>
+            </div>
+            <div>
+                <label for="course">Choose a course:</label><br> 
+                <select id="course" name="courselist"> 
+                    <option value="html">HTML Introduction</option> 
+                    <option value="css">Styling with CSS</option> 
+                    <option value="js">JavaScript</option> 
+                    <option value="react">React Basics</option> 
+                </select> 
+            </div>
+            <button type="submit">Log In</button>
+        </form>
+    </main>
+    <footer>
+        <!-- Copyright notices and other footer content here -->
+        <p>Copyright for Little Lemon</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

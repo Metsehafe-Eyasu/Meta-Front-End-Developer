@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    animation: bgColorChange 3s ease infinite;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    animation: myanimation 3s ease-in infinite;
+}
+
+@keyframes myanimation{
+    0%{width: 100px; height: 100px;}
+    25%{width: 50px; background-color: yellow;}
+    50%{border-radius: 50%; background-color:  red;}
+    75%{height: 50px;background-color: yellowgreen;}
+    85%{width: 200px; height: 200px; background-color: green;}
+    100%{border-radius: 0; width: 100px; height: 100px; background-color: crimson;}
+}
+
+@keyframes bgColorChange {
+    0%{background-color: beige;}
+    10%{background-color: blue;}
+    20%{background-color: green;}
+    30%{background-color: purple;}
+    40%{background-color: peru;}
+    50%{background-color: peachpuff;}
+    60%{background-color: gray;}
+    70%{background-color: red;}
+    80%{background-color:   black;}
+    90%{background-color: crimson;}
+    100%{background-color: yellow;}
+}

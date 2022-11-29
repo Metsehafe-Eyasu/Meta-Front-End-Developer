@@ -1,0 +1,24 @@
+.columns{
+    display: flex;
+    align-items: stretch;
+    height: 300px;
+    max-width: 300px;
+    border: 1px solid #000;
+}
+    .container{
+        background-color: beige;
+        flex: 1;
+        display: flex;
+        flex-flow: column;
+        align-items: stretch;
+        justify-content: flex-end;
+    }
+    .bar{
+        border-right: 1px solid white;
+    }
+    .male{
+        background-color: rgb(26, 18, 73);
+    }
+    .female {
+        background-color: rgb(187, 50, 8);
+    }

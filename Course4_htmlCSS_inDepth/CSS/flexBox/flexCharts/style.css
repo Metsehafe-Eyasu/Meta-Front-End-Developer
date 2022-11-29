@@ -1,0 +1,33 @@
+.row{
+    display: flex;
+    align-items: stretch;
+}
+
+.row .label {
+    flex: 0 1 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row .container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+.row .dish{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.dish-1 {
+    flex-basis: 35%;
+    background-color: blue;
+}
+.dish-2 {
+    flex-basis: 50%;
+    background-color: green;
+}
+.dish-3 {
+    flex-basis: 15%;
+    background-color: yellow;
+}

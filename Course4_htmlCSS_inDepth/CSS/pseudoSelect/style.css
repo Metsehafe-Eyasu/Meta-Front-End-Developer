@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    background-color: beige;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+    gap: 20px;
+    padding: 30px;
+    /* margin-bottom: 120px; */
+}
+ul > li:nth-child(2) {
+    grid-column: 2/ span 2;
+    /* background-color: aquamarine; */
+}
+
+ul > li {
+    background-color: blue;
+}
+
+ul > li::marker{
+    color: red;
+    content: ">";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+.container{
+    height: 120px;
+    background-color: bisque;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container > #tip::before{
+    background: darkkhaki;
+    color: darkslategrey;
+    content: "Tip: ";
+    padding: auto 5px auto 3px;
+    border-radius: 10%;
+}
+.container > #tip::after {
+    background: darkkhaki;
+    color: darkslategrey;
+    content: "!!";
+    padding-right: 5px;
+    border-radius: 20%;
+}
+
+.pseudo {
+    background-color: darkgoldenrod;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+}
+
+a[href$="/"] {
+    background-color: red;
+}
+
+a[href*="meta"]:hover {
+    background-color: blue;
+    color: white;
+}
+
+.listing{
+    height: 120px;
+    background-color: coral;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.listing > :only-of-type{
+    background-color: cyan;
+}
