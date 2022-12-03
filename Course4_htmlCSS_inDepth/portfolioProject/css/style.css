@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+h1{
+    font-family: 'Raleway', serif;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+header > img{
+    max-width: 35rem;
+    width: 60%;
+    min-width: 15rem;
+}
+nav {
+    width: 60%;
+    min-width: 640px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+nav > ul{
+    width: 80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+nav > ul > li{
+    position: relative;
+    padding: 0.3rem;
+}
+
+nav > ul li::after{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 0%;
+    height: 1px;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.25s ease-out;
+}
+
+nav > ul li:hover::after{
+    width: 100%;
+}
+
+main {
+    padding: 3rem 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+section{
+    display: flex;
+    gap: 1rem;
+    min-width: 80%;
+    width: 60rem;
+    max-width: 100%;
+}
+@media (max-width:840px) {
+    section{
+        flex-flow: column;
+    }
+}
+section article:only-child{
+    color: white;
+    padding: 2rem;
+    background: no-repeat linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../images/jewelry.jpg);
+    min-height: 15rem;
+    height: auto;
+}
+article{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+article:hover{
+    transform: scale(1.05);
+    transition: transform 0.8s ease-in;
+    box-shadow: 0.5px 0.5px 1.5px 1.5px rgba(0, 0, 0, 0.1);
+}
+.img-container {
+    width: 80%;
+}
+.img-container > img{
+    margin-left: 50%;
+    transform: translate(-50%);
+    min-width: 200px;
+    width: 80%;
+    max-width: 300px;
+}
+.text-container{
+    margin-top: 2rem;
+    text-align: left;
+    padding: 1rem;
+    width: 100%;
+}
+.text-container > p {
+    font-size: 0.9rem;
+    color: rgb(47, 47, 47);
+}
+.text-container > span{
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+footer > img{
+    max-width: 15%;
+    width: 10rem;
+}
+footer > div{
+    border-top: 1px solid black;
+}
