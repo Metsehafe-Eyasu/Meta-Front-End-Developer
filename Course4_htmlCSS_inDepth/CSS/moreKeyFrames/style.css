@@ -1,0 +1,19 @@
+body{
+    background-color: beige;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#ball{
+    background-color: peru;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from{ transform: translate3d(0, 0, 0); }
+    to{ transform: translate3d(100px, -240px, 0); }
+}

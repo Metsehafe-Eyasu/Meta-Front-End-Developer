@@ -71,11 +71,15 @@ a{
 a[href$="/"] {
     background-color: red;
 }
+a[href~="h"] {
+    padding: 100px;
+}
 
 a[href*="meta"]:hover {
     background-color: blue;
     color: white;
 }
+
 
 .listing{
     height: 120px;
