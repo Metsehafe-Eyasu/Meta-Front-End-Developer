@@ -27,6 +27,7 @@ This is a repository I made to save what I have learned when taking the [Meta Fr
 <p>
   <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" width="40" height="40">
   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" width="40" height="40">
+  <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" width="40" height="40">
 </p>
 
 ### Course 5 : [React Basics](/Course5_ReactBasics/)
