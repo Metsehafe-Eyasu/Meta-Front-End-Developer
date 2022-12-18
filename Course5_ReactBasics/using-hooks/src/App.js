@@ -1,47 +1,30 @@
 import './App.css';
 import InputComponent from "./components/InputComponent.js";
 import RegisterForm from './components/RegisterForm';
+import MealsList from './components/MealsList';
+import Counter from './components/Counter'
+import MealsProvider from './providers/MealsProvider'
+import Main from './components/PropDrilling';
+import Reducer from './components/Reducer';
 
-function Main(props) { 
-    return <Header msg={props.msg} />; 
-  };
-  
-  function Header(props) { 
-    return ( 
-      <div style={{ border: "10px solid whitesmoke" }}> 
-        <h1>Header here</h1> 
-        <Wrapper msg={props.msg} /> 
-      </div> 
-    ); 
-  };
-  
-  function Wrapper(props) { 
-    return ( 
-      <div style={{ border: "10px solid lightgray" }}> 
-        <h2>Wrapper here</h2> 
-        <Button msg={props.msg} /> 
-      </div> 
-    ); 
-  };
-  
-  function Button(props) { 
-    return ( 
-      <div style={{ border: "20px solid orange" }}> 
-        <h3>This is the Button component</h3> 
-        <button onClick={() => alert(props.msg)}>Click me!</button> 
-      </div> 
-    ); 
-  };
 
 function App() {
   return (
     <div className="app">
+        <MealsProvider>
+            <MealsList />
+            <Counter />
+        </MealsProvider>
+
+        <Reducer />
+
         <InputComponent />
         <RegisterForm />
 
         <Main  
             msg="I passed through the Header and the Wrapper and I reached the Button component"  
         />
+
     </div>
   );
 }
