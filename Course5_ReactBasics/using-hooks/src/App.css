@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.input{
+    height: 20rem;
+    width: 20rem;
+    display:flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background-color: beige;
+    padding: 5rem;
+    border-radius: 2rem;
+}
+.input:nth-child() {
+    width: 20rem;
+}
+
+.form{
+    width: 20rem;
+    height: 20rem;
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: beige;
+    padding: 2rem;
+    border-radius: 2rem;
+    gap: 2rem;
+}
