@@ -1,0 +1,18 @@
+.App {
+  text-align: left;
+  padding: 2rem;
+}
+
+.desert{
+    margin: 2rem 0;
+    background-color: beige;
+    width: fit-content;
+    padding: 2rem;
+}
+
+.todo{
+    background-color: beige;
+    margin: 1rem 0;
+    padding: 1rem;
+    width: fit-content;
+}
