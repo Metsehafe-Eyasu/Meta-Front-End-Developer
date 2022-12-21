@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import LogicalAndExample from "./components/LogicalAndExample";
 import CurrentTime from "./components/CurrentTime";
 import WeekDay from "./components/WeekDay";
+import Assets from "./components/Assets";
 
 function App() {
   const day = new Date();
@@ -27,6 +28,9 @@ function App() {
         <Link to="/logical-and" className="nav-item">
           Logical And Example
         </Link>
+        <Link to="/assets" className="nav-item">
+          Assets
+        </Link>
       </nav>
 
       <Routes>
@@ -35,6 +39,7 @@ function App() {
         <Route path="/contact-me" element={<Contact />} />
         <Route path="/weekday" element={<WeekDay time={day} />} />
         <Route path="/logical-and" element={<LogicalAndExample />} />
+        <Route path="/assets" element={<Assets />} />
       </Routes>
 
       <CurrentTime day={day.getDay()}/>
