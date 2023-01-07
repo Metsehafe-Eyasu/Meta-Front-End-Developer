@@ -33,6 +33,7 @@ This is a repository I made to save what I have learned when taking the [Meta Fr
 ### Course 5 : [React Basics](/Course5_ReactBasics/)
 <p>
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" width="40" height="40">
+  <img src="https://github.com/devicons/devicon/blob/master/icons/jest/jest-plain.svg" width="40" height="40">
 </p>
 
 <!-- ### Course 5 : HTML and CSS in Depth
